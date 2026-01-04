@@ -230,7 +230,7 @@ body {
   text-decoration: underline;
 }
 
-.container {
+.container-tv {
   color: white;
   display: flex;
   margin: 100px auto;
@@ -271,4 +271,35 @@ body {
   width: 90%;
   margin-left: 40px;
   height: 100%;
+}
+
+/* New Section */
+.container-trending {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  width: 1200px;
+}
+
+.trending-h2 {
+  color: white;
+  font-weight: 500;
+}
+
+.trending-img {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  border: none;
+  border-radius: 6px;
+}
+
+.img-andhra {
+  width: 20%;
+  overflow: visible;
 }
