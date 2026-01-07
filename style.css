@@ -277,7 +277,7 @@ body {
 .container-trending {
   display: flex;
   flex-direction: column;
-  margin: 100px auto;
+  margin: 100px auto 30px auto;
   width: 1200px;
 }
 
@@ -287,19 +287,228 @@ body {
 }
 
 .trending-img {
+  position: relative;
+  width: 1200px;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 45px;
   align-items: center;
+  overflow: scroll;
+  padding-left: 20px;
+  overflow-y: hidden;
+}
+
+/* Was unable to create carousal so added scroll*/
+
+.trending-img::-webkit-scrollbar {
+  height: 2px;
+}
+
+.trending-img::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.377);
+}
+
+.trending-img::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.419);
+  border-radius: 10px;
 }
 
 .img {
-  width: 200px;
+  width: 180px;
   border: none;
   border-radius: 6px;
 }
 
-.img-andhra {
-  width: 20%;
-  overflow: visible;
+.number {
+  position: absolute;
+  z-index: 5;
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 100px;
+  bottom: 2%;
+  margin: 0;
+  margin-left: -20px;
+}
+
+/* New Section */
+.container-featurebox {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 1200px;
+}
+
+.featurebox-h2 {
+  color: white;
+  font-weight: 500;
+}
+
+.featurebox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.featurebox1 {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+  background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.featurebox-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.featurebox-h3 {
+  font-size: 23px;
+  margin: 0;
+}
+
+.featurebox-desc {
+  color: rgba(255, 255, 255, 0.704);
+  font-weight: 500;
+  margin: 0;
+}
+
+.featurebox-svg {
+  align-self: flex-end;
+}
+
+/* New Section Start */
+.container-faq {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 1200px;
+}
+
+.faq-h2 {
+  color: white;
+  font-weight: 500;
+}
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.faq-accordian {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(45, 45, 45);
+  border: none;
+  padding: 25px;
+  color: white;
+}
+
+.faq-question {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.faq-accordian:hover {
+  background-color: rgb(65, 65, 65);
+  cursor: pointer;
+}
+
+/* New Section Start */
+.container-getstarted {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 1200px;
+}
+
+.getstarted-desc {
+  color: white;
+  text-align: center;
+}
+
+.getstarted-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.getstarted-input {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.39);
+  color: white;
+  padding: 3px 16px;
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.523);
+  border-radius: 4px;
+}
+
+.getstarted-input::placeholder {
+  color: rgba(255, 255, 255, 0.755);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* New Section Start */
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 100px auto;
+  width: 1200px;
+  padding: 0;
+}
+
+.p-call {
+  color: rgba(255, 255, 255, 0.732);
+}
+
+.footer-option {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  gap: 60px;
+  color: rgba(255, 255, 255, 0.732);
+  list-style: none;
+  justify-content: space-between;
+  line-height: 1.2em;
+  text-decoration: underline;
+}
+
+.footer-en-btn {
+  margin: 20px 0 50px 0;
+  text-align: start;
+}
+
+.footer-netflix {
+  color: rgba(255, 255, 255, 0.732);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer-bot {
+  color: rgba(255, 255, 255, 0.718);
+  font-weight: 400;
+  font-size: 12px;
+  margin: 25px 0 50px 0;
+}
+
+.footer-bot span {
+  color: rgb(48, 124, 255);
+  text-decoration: underline;
 }
