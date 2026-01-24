@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 990px) {
   .hero {
     min-width: 100vw;
     height: 100vh;
@@ -241,11 +241,11 @@ body {
   .container-tv {
     color: white;
     display: flex;
-    margin: 100px auto;
+    margin: 100px 0;
     width: 100vw;
-    gap: 40px;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 75px;
   }
 
   .left {
@@ -288,7 +288,7 @@ body {
     flex-direction: column;
     margin: 100px auto 30px auto;
     width: 100vw;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .trending-h2 {
@@ -325,7 +325,7 @@ body {
   }
 
   .img {
-    width: 160px;
+    width: 200px;
     border: none;
     border-radius: 6px;
   }
@@ -347,7 +347,7 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
-    padding: 0 25px;
+    padding: 0 75px;
   }
 
   .featurebox-h2 {
@@ -362,7 +362,7 @@ body {
   }
 
   .featurebox1 {
-    max-width: 180px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -403,7 +403,7 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
-    padding: 0 25px;
+    padding: 0 75px;
   }
 
   .faq-h2 {
@@ -526,7 +526,7 @@ body {
   }
 }
 
-@media (min-width: 700px) and (max-midth: 1023px) {
+@media (min-width: 568px) and (max-width: 990px) {
   .hero {
     max-width: 100vw;
     height: 100vh;
@@ -536,10 +536,10 @@ body {
   }
 
   .hero-img {
-    position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
+    transform: scale(1.2);
     z-index: 1;
   }
 
@@ -566,6 +566,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: 2;
+    height: 100vh;
   }
 
   .nav {
@@ -622,7 +623,7 @@ body {
     text-align: center;
     color: white;
     top: 0;
-    width: 580px;
+    width: 85%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -630,7 +631,7 @@ body {
   }
 
   .title {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: bold;
     line-height: 1.2em;
     margin: 0;
@@ -647,6 +648,7 @@ body {
 
   .content-flex {
     position: absolute;
+    width: 85%;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -674,13 +676,13 @@ body {
   }
 
   .content-btn {
-    width: 220px;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(229, 9, 20);
     color: white;
-    font-size: 24px;
+    font-size: 2.2vmax;
     padding: 10px 16px;
     border: none;
     border-radius: 4px;
@@ -700,7 +702,7 @@ body {
   /* Next Section */
   .container-cta {
     display: flex;
-    max-width: 90vw;
+    max-width: 990px;
     width: 100%;
     background-color: #00000000;
     background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
@@ -758,11 +760,11 @@ body {
   .container-tv {
     color: white;
     display: flex;
-    margin: 100px auto;
+    margin: 100px 0;
     width: 100vw;
-    gap: 40px;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 40px;
   }
 
   .left {
@@ -770,7 +772,7 @@ body {
   }
 
   .heading {
-    font-size: 48px;
+    font-size: 5vmax;
     margin: 0;
   }
 
@@ -788,7 +790,7 @@ body {
 
   .tv {
     position: relative;
-    width: 90%;
+    width: 100%;
   }
 
   .video {
@@ -805,7 +807,7 @@ body {
     flex-direction: column;
     margin: 100px auto 30px auto;
     width: 100vw;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .trending-h2 {
@@ -815,11 +817,12 @@ body {
 
   .trending-img {
     position: relative;
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    gap: 35px;
-    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    align-self: center;
     overflow: scroll;
     padding-left: 20px;
     overflow-y: hidden;
@@ -841,7 +844,7 @@ body {
   }
 
   .img {
-    width: 170px;
+    width: 200px;
     border: none;
     border-radius: 6px;
   }
@@ -863,7 +866,7 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   .featurebox-h2 {
@@ -875,14 +878,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .featurebox1 {
-    max-width: 190px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 5px;
     color: white;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
@@ -899,7 +904,7 @@ body {
   }
 
   .featurebox-h3 {
-    font-size: 19px;
+    font-size: 2.5vmax;
     margin: 0;
   }
 
@@ -919,7 +924,7 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
-    padding: 0 25px;
+    padding: 0 75px;
   }
 
   .faq-h2 {
@@ -962,9 +967,11 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
+    align-items: center;
   }
 
   .getstarted-desc {
+    width: 85%;
     color: white;
     text-align: center;
   }
@@ -997,7 +1004,7 @@ body {
   .container-footer {
     display: flex;
     flex-direction: column;
-    margin: 50px auto 100px auto;
+    margin: 50px auto 0 auto;
     width: 100vw;
     padding: 0 25px;
   }
@@ -1009,6 +1016,7 @@ body {
   .footer-option {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 85%;
     gap: 60px;
     color: rgba(255, 255, 255, 0.732);
@@ -1033,7 +1041,7 @@ body {
     color: rgba(255, 255, 255, 0.718);
     font-weight: 400;
     font-size: 12px;
-    margin: 25px 0 50px 0;
+    margin: 25px 0 25px 0;
   }
 
   .footer-bot span {
@@ -1042,7 +1050,7 @@ body {
   }
 }
 
-@media (max-midth: 699px) {
+@media (max-width: 568px) {
   .hero {
     max-width: 100vw;
     height: 100vh;
@@ -1052,8 +1060,7 @@ body {
   }
 
   .hero-img {
-    position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     z-index: 1;
@@ -1082,6 +1089,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: 2;
+    height: 100vh;
   }
 
   .nav {
@@ -1106,23 +1114,26 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
+    width: 80%;
+    justify-content: end;
   }
 
   .en-btn {
     display: flex;
     background-color: rgba(0, 0, 0, 0.458);
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     border: 1px solid rgba(255, 255, 255, 0.523);
     border-radius: 4px;
-    padding: 6px 14px;
+    padding: 5px 14px;
     gap: 6px;
+    align-items: center;
   }
 
   .signin-btn {
     background-color: rgb(229, 9, 20);
     color: white;
-    font-size: 16px;
+    font-size: 10px;
     border: none;
     border-radius: 4px;
     padding: 6px 20px;
@@ -1138,7 +1149,7 @@ body {
     text-align: center;
     color: white;
     top: 0;
-    width: 580px;
+    width: 85%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1146,7 +1157,7 @@ body {
   }
 
   .title {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: bold;
     line-height: 1.2em;
     margin: 0;
@@ -1163,6 +1174,7 @@ body {
 
   .content-flex {
     position: absolute;
+    width: 85%;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -1171,37 +1183,43 @@ body {
     left: 50%;
     transform: translate(-50%);
     padding-top: 20px;
+    margin-top: 10px;
   }
 
   .content-input {
-    width: 400px;
+    width: 70%;
     background-color: rgba(0, 0, 0, 0.39);
     color: white;
     padding: 3px 16px;
-    font-size: 16px;
+    font-size: 2vmax;
     border: 1px solid rgba(255, 255, 255, 0.523);
     border-radius: 4px;
   }
 
   .content-input::placeholder {
     color: rgba(255, 255, 255, 0.718);
-    font-size: 14px;
+    font-size: 2vmax;
     font-weight: 300;
   }
 
   .content-btn {
-    width: 220px;
+    width: 37%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(229, 9, 20);
     color: white;
-    font-size: 24px;
+    font-size: 2vmax;
     padding: 10px 16px;
     border: none;
     border-radius: 4px;
     font-weight: bold;
     gap: 8px;
+  }
+
+  .svg-icon {
+    width: 15px;
+    height: 15px;
   }
 
   .content-btn:hover {
@@ -1216,8 +1234,7 @@ body {
   /* Next Section */
   .container-cta {
     display: flex;
-    max-width: 90vw;
-    width: 100%;
+    width: 100vw;
     background-color: #00000000;
     background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
     box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
@@ -1225,6 +1242,7 @@ body {
     height: 150px;
     justify-content: center;
     margin: 1px auto 0;
+    padding: 0 10px;
   }
 
   .cta {
@@ -1246,12 +1264,12 @@ body {
   }
 
   .cta-h3 {
-    font-size: 20px;
+    font-size: 3vmax;
     font-weight: 500;
   }
 
   .cta-p {
-    font-size: 16px;
+    font-size: 2.4vmax;
     font-weight: 500;
   }
 
@@ -1274,28 +1292,31 @@ body {
   .container-tv {
     color: white;
     display: flex;
-    margin: 100px auto;
+    flex-direction: column;
+
+    margin: 100px 0;
     width: 100vw;
-    gap: 40px;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0 25px;
+    padding: 0 20px;
   }
 
   .left {
-    width: 50%;
+    width: 90%;
+    text-align: center;
   }
 
   .heading {
-    font-size: 48px;
+    font-size: 6vmax;
     margin: 0;
   }
 
   .sub-heading {
-    font-size: 22px;
+    font-size: 4vmax;
   }
 
   .right {
-    width: 50%;
+    width: 90%;
   }
 
   .real-tv {
@@ -1304,14 +1325,14 @@ body {
 
   .tv {
     position: relative;
-    width: 90%;
+    width: 100%;
   }
 
   .video {
     position: absolute;
     object-fit: contain;
     width: 80%;
-    margin-left: 40px;
+    margin-left: 20px;
     height: 100%;
   }
 
@@ -1321,7 +1342,7 @@ body {
     flex-direction: column;
     margin: 100px auto 30px auto;
     width: 100vw;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .trending-h2 {
@@ -1331,11 +1352,12 @@ body {
 
   .trending-img {
     position: relative;
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    gap: 35px;
-    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    align-self: center;
     overflow: scroll;
     padding-left: 20px;
     overflow-y: hidden;
@@ -1357,7 +1379,7 @@ body {
   }
 
   .img {
-    width: 170px;
+    width: 200px;
     border: none;
     border-radius: 6px;
   }
@@ -1379,7 +1401,7 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   .featurebox-h2 {
@@ -1391,14 +1413,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 
   .featurebox1 {
-    max-width: 190px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 5px;
     color: white;
     background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
@@ -1415,7 +1439,7 @@ body {
   }
 
   .featurebox-h3 {
-    font-size: 19px;
+    font-size: 2.5vmax;
     margin: 0;
   }
 
@@ -1447,7 +1471,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 99%;
+    width: 100%;
   }
 
   .faq-accordian {
@@ -1478,9 +1502,11 @@ body {
     flex-direction: column;
     margin: 50px auto;
     width: 100vw;
+    align-items: center;
   }
 
   .getstarted-desc {
+    width: 85%;
     color: white;
     text-align: center;
   }
@@ -1513,7 +1539,7 @@ body {
   .container-footer {
     display: flex;
     flex-direction: column;
-    margin: 50px auto 100px auto;
+    margin: 50px auto 0 auto;
     width: 100vw;
     padding: 0 25px;
   }
@@ -1525,7 +1551,8 @@ body {
   .footer-option {
     display: flex;
     flex-direction: row;
-    width: 85%;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 60px;
     color: rgba(255, 255, 255, 0.732);
     list-style: none;
@@ -1548,8 +1575,8 @@ body {
   .footer-bot {
     color: rgba(255, 255, 255, 0.718);
     font-weight: 400;
-    font-size: 12px;
-    margin: 25px 0 50px 0;
+    font-size: 1.8vmax;
+    margin: 25px 0 25px 0;
   }
 
   .footer-bot span {
